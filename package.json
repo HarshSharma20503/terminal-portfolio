@@ -1,21 +1,47 @@
 {
-  "name": "xoxoharsh",
+  "name": "@xoxoharsh/terminal-portfolio",
   "version": "1.0.0",
+  "description": "My Personal beautiful terminal-based portfolio display with interactive CLI interface.",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "terminal-portfolio": "./index.js"
+  },
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "A Personal Card for Harsh Sharma",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshsharma20503/terminal-portfolio.git"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "portfolio",
+    "developer-portfolio",
+    "interactive",
+    "command-line",
+    "resume",
+    "profile",
+    "ascii-art",
+    "terminal-ui",
+    "developer-tools",
+    "npx",
+    "node-cli",
+    "terminal-portfolio",
+    "portfolio-generator"
+  ],
+  "author": {
+    "name": "Harsh Sharma",
+    "email": "harshsharma20503@gmail.com",
+    "url": "https://xoxoharsh.in"
+  },
+  "homepage": "https://github.com/harshsharma20503/terminal-portfolio#readme",
   "dependencies": {
-    "boxen": "^8.0.1",
     "chalk": "^5.3.0",
-    "chalk-animation": "^2.0.3",
-    "clear": "^0.1.0",
-    "figlet": "^1.8.0",
-    "inquirer": "^12.1.0"
+    "inquirer": "^9.2.12",
+    "boxen": "^7.1.1",
+    "figlet": "^1.7.0",
+    "clear": "^0.1.0"
   }
 }

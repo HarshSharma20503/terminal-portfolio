@@ -59,53 +59,51 @@ const showWelcome = () => {
 // Portfolio content
 const portfolioContent = {
   "About Me": {
-    content: `I am a passionate software developer with a keen interest in building scalable applications 
-and solving complex problems. I love to explore new technologies and contribute to open-source projects. 
-When I'm not coding, you can find me reading tech blogs or playing chess!`,
+    content: `Hello, my name is Harsh Sharma. I am a final-year BTech student with an interest in coding and feel very lucky to have been offered a software engineer role at Google. I have built a few personal projects and enjoy solving DSA/CP problems every now and then. I love outdoor sports and am up for any challengers anytime (unless it’s some kind of martial arts, and I’m going to get beaten up).`,
     color: "green",
   },
   "My Experience": {
-    content: `🏢 Senior Developer at TechCorp (2022-Present)
-• Led development of a cloud-based inventory management system
-• Implemented real-time analytics dashboard using React and Node.js
-• Reduced system response time by 40%
+    content: `🏢 Technology Intern at Fidelity International (June-July 2024)
+• Developed a POC of custodial crypto wallet by reverse engineering metamask and metamask institutional.
+• Implemented a IAM like dashboard using MERN Stack for access control over keys and every transaction.
+• Documented the entire reverse engineering process with architecture diagram and the codebase for future reference.
 
-🏢 Software Engineer at InnovateSoft (2020-2022)
-• Developed microservices architecture for e-commerce platform
-• Created automated testing pipeline reducing deployment time by 60%
-• Mentored junior developers and conducted code reviews`,
+🏢 Teaching Assistant at Ask Senior (Sept-Oct 2023)
+• Provided guidance and resolved DSA/CP-related doubts
+• Served as a mentor and fostered a collaborative learning environment.
+• Provided feedback to improve the course and enhance learning outcomes.`,
     color: "yellow",
   },
   "Tech Stack I know": {
-    content: `${chalk.blue(
-      "Frontend"
-    )}:  React.js  |  Vue.js  |  TypeScript  |  HTML5/CSS3
-${chalk.green("Backend")}:   Node.js  |  Express  |  Django  |  FastAPI
-${chalk.red("Database")}:  MongoDB  |  PostgreSQL  |  Redis
-${chalk.magenta("DevOps")}:    Docker  |  Kubernetes  |  AWS  |  CI/CD
+    content: `${chalk.blue("Frontend")}:  React.js  |  TypeScript  |  HTML5/CSS3
+${chalk.green("Backend")}:   Node.js  |  Express | Firebase 
+${chalk.red("Database")}:  MongoDB  |  PostgreSQL  |  SQLite
+${chalk.magenta("DevOps")}:    GitHub  |  Docker  |  CI/CD  |  Jenkins
 ${chalk.yellow("Tools")}:     Git  |  Jira  |  Postman  |  VS Code`,
     color: "blue",
   },
   "My Coding Profiles": {
-    content: `🏆 LeetCode: ${chalk.cyan("https://leetcode.com/yourprofile")}
-    Current Rating: 2100+ | Problems Solved: 500+
+    content: `🏆 LeetCode: ${chalk.cyan("https://leetcode.com/xoxoharsh/")}
+    Max Rating: 1962 | Problems Solved: 680+
 
-⭐ CodeForces: ${chalk.cyan("https://codeforces.com/profile/yourhandle")}
-    Max Rating: 1800 | Division: 1
+⭐ CodeForces: ${chalk.cyan("https://codeforces.com/profile/XoXoHarsh")}
+    Max Rating: 1556 | Problem Solved: 500+
 
 🌟 GeeksForGeeks: ${chalk.cyan(
-      "https://auth.geeksforgeeks.org/user/yourprofile"
+      "https://www.geeksforgeeks.org/user/harshsharma20503/"
     )}
-    Institution Rank: #5 | Total Score: 2500+
+    Problem Solved: 250+ 
 
-💻 HackerRank: ${chalk.cyan("https://www.hackerrank.com/yourprofile")}
-    5⭐ in Problem Solving | 4⭐ in Python`,
+💻 HackerRank: ${chalk.cyan(
+      "https://www.hackerrank.com/profile/harshsharma20503"
+    )}
+    6⭐ in Problem Solving | 5⭐ in C++`,
     color: "magenta",
   },
   "Contact Info": {
-    content: `📧 Email: ${chalk.cyan("your.email@example.com")}
-🔗 LinkedIn: ${chalk.cyan("https://linkedin.com/in/yourprofile")}
-🐙 GitHub: ${chalk.cyan("https://github.com/yourusername")}
+    content: `📧 Email: ${chalk.cyan("harshsharma20503@gmail.com")}
+🔗 LinkedIn: ${chalk.cyan("https://www.linkedin.com/in/harshsharma20503/")}
+🐙 GitHub: ${chalk.cyan("https://github.com/HarshSharma20503/")}
 
 ${chalk.italic("Fun fact: I can debug faster than a rubber duck! 🦆")}`,
     color: "red",
