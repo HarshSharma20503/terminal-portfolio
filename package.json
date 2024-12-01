@@ -1,0 +1,19 @@
+{
+  "name": "xoxoharsh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A Personal Card for Harsh Sharma",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "figlet": "^1.8.0",
+    "inquirer": "^12.1.0"
+  }
+}
