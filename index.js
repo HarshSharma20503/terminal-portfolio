@@ -6,24 +6,44 @@ import boxen from "boxen";
 import figlet from "figlet";
 import clear from "clear";
 
-// Centers text based on terminal width
-const centerText = (text) => {
-  const terminalWidth = process.stdout.columns || 80;
-  const textWidth = text.length;
-  const padding = Math.max(0, Math.floor((terminalWidth - textWidth) / 2));
-  return " ".repeat(padding) + text;
-};
+// Get terminal dimensions
+const getTerminalSize = () => ({
+  width: process.stdout.columns || 80,
+  height: process.stdout.rows || 24,
+});
 
 // Creates a centered box with specified content and styling
 const createBox = (content, color, title = "") => {
+  // Calculate the width of the content
+  const contentWidth = Math.max(
+    ...content.split("\n").map((line) => line.length)
+  );
+  // Add padding, borders, and margin to get total box width
+  const totalBoxWidth = contentWidth + 4; // 2 for padding + 2 for borders
+
+  // Get terminal width
+  const { width: terminalWidth } = getTerminalSize();
+
+  // Calculate left margin to center the box
+  const marginLeft = Math.max(
+    0,
+    Math.floor((terminalWidth - totalBoxWidth) / 2)
+  );
+
   return boxen(chalk[color](content), {
     padding: 1,
-    margin: 1,
+    margin: {
+      top: 1,
+      bottom: 1,
+      left: marginLeft,
+      right: marginLeft,
+    },
     borderStyle: "double",
     borderColor: color,
     title: title,
     titleAlignment: "center",
     textAlignment: "center",
+    float: "center",
   });
 };
 
@@ -99,12 +119,17 @@ ${chalk.italic("Fun fact: I can debug faster than a rubber duck! 🦆")}`,
 
 // Show menu and handle selection
 const showMenu = async () => {
+  // Add some vertical spacing before the menu
+  console.log("\n");
+
   const { choice } = await inquirer.prompt([
     {
       type: "list",
       name: "choice",
       message: "Choose an option:",
       choices: Object.keys(portfolioContent),
+      // Center the menu using padding
+      prefix: " ".repeat(Math.floor(getTerminalSize().width / 4)),
     },
   ]);
 
